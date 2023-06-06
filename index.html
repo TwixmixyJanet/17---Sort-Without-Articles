@@ -16,6 +16,7 @@
       display: flex;
       align-items: center;
       min-height: 100vh;
+      flex-direction: column;
     }
 
     #bands {
@@ -26,6 +27,7 @@
       margin: auto;
       padding: 0;
       box-shadow: 0 0 0 20px rgba(0, 0, 0, 0.05);
+      
     }
 
     #bands li {
@@ -37,17 +39,18 @@
       border-bottom: 0;
     }
 
-    a {
+    h1 {
       color: #ffc600;
       text-decoration: none;
     }
 
   </style>
-
-  <ul id="bands"></ul>
+  <div>
+<h1>My Current Playlist</h1></div><br>
+ <div> <ul id="bands"></ul></div>
 
 <script>
-const bands = ['The Plot in You', 'The Devil Wears Prada', 'Pierce the Veil', 'Norma Jean', 'The Bled', 'Say Anything', 'The Midway State', 'We Came as Romans', 'Counterparts', 'Oh, Sleeper', 'A Skylit Drive', 'Anywhere But Here', 'An Old Dog'];
+const bands = ['Aaron Copland', 'Evanescence', 'Adele', 'Ariana Grande', 'Belle and Sebastian', 'The Decemberists', 'The Flaming Lips', 'Ivete Sangalo', 'Janelle Monae', 'Jump Little Children', 'Katy Perry', 'KC and The Sunshine Band', 'Lady Gaga', 'Lil Nas X', 'Lizzo', 'Miley Cyrus', 'Schuyler Fisk', 'Styx'];
 
 function strip(bandName) {
   return bandName.replace(/^(a |the |an )/i, '').trim();
